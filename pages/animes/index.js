@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from 'next/link';
 import ApiAnimes from '@/services/apiAnimes';
 import { Button, Col, Table } from 'react-bootstrap';
-
+import {BsSearch} from 'react-icons/bs'
 
 const index = () => {
 
@@ -35,7 +35,7 @@ const index = () => {
                                 <td>{item.year}</td>
                                 <td>
                                     <Link href={'/animes/' + item.mal_id}>
-                                       <Button></Button>
+                                       <BsSearch/>
                                     </Link>
                                 </td>
                             </tr>

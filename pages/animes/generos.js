@@ -15,7 +15,7 @@ const generos = () => {
     <Pagina titulo='Generos'>
          <ol>
           {anime.map(item => (
-            <li>{item.name}({item.count})</li>
+            <li key={item.mal_id}>{item.name} ({item.count})</li>
           ))}
         </ol>
     </Pagina>
